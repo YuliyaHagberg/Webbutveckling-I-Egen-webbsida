@@ -1,0 +1,420 @@
+body {margin: 0rem;}
+.navbar, .mainimg, .rattigheter, footer, #submit, #myBtn {background-color: #48372E;}
+.team, .omoss, form, .varakok, .varvision, .reviews, .meny, .philosophy {background-color: #F4F1ED;}
+
+/*  Navigation bar styling */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em;
+}
+
+.navbar .logo {
+    font-family: Garamond;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0rem 1.5rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline #e7e3de;
+}
+
+.navbar, .navlinks {display: flex;}
+
+/* Main-image styling */
+.mainimg {
+    text-align: center;
+    background-image: url('images/mainimg.svg');
+    background-size: cover;
+    background-position: center;
+    height: 23rem;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainimg h4, .mainimg p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+}
+
+.mainimg p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.mainimg h1 {
+    font-family: Garamond;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin: 1rem;
+}
+
+/*  Background images */
+.mainimg.meny {background-image: url('images/meny.svg');}
+.varakok .block1 {background-image: url("images/skandinaviskt.svg");}
+.varakok .block2 {background-image: url("images/asiatiskt.svg");}
+.varakok .block3 {background-image: url("images/inter.svg");}
+.varakok .block1eng {background-image: url("images/skandeng.svg");}
+.varakok .block2eng {background-image: url("images/asiaeng.svg");}
+.varakok .block3eng {background-image: url("images/intereng.svg");}
+
+.varvision .block1 {background-image: url("images/ravaror.svg");}
+.varvision .block2 {background-image: url("images/matratter.svg");}
+.varvision .block3 {background-image: url("images/upplevelse.svg");}
+.bord {background-image: url('images/bokabord.svg');}
+.kontakt {background-image: url('images/kontakt.svg');}
+
+/*  General h1-h2 & p styling */
+.varakok h1, .varvision h1, .team h1, .reviews h1, .meny h2, .philosophy h1, .filosofi h1 {
+    font-family: Garamond;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    color: #48372E;
+    padding: 1rem 0rem;
+    margin: 0;
+}
+
+.kok p, .vision p, .team p, .omoss p, .reviews p, .meny p, .philosophy p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+/*  Vision/Om oss & Kök styling */
+.varakok, .varvision, .reviews {padding: 2rem 0rem 3rem 0rem;}
+
+.kok-container, .vision-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kok, .vision {
+    position: relative;
+    margin: 0.5rem 0rem;
+    min-width: 30%;
+    background-size: cover;
+    background-position: center;
+    height: 24rem;
+}
+
+.kok .text, .vision .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255, 0.75);
+    color: #48372E;
+}
+
+.team p, .philosophy p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.philosophy {padding: 3rem 0 1rem 0;}
+
+.omossblock p {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.kok h4, .vision h4 {
+    font-family: Garamond;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/*  Meny styling */
+.meny h2 {
+    text-align: left;
+    color: #48372E;}
+
+.meny h3, .meny h4 {
+    font-family: Garamond;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.meny h4 {
+    text-align: right;
+    margin-bottom: 1rem;}
+
+.menyblock {
+    padding: 2rem 0rem;
+    display: flex;
+    gap: 4rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.menylista {max-width: 80%;}
+
+/*Banner styling */
+.banner {
+    background-image: url("images/banner.svg");
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 0.2rem;
+    text-align: right;
+    margin: 1rem auto;
+    width: 60%;
+}
+
+.banner h1 {
+    font-family: Garamond;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: lighter;
+    margin: 0rem auto;
+    width: 60%;
+}
+
+/*  Team, Om oss & Review styling */
+.omossblock, .teamblock {
+    padding: 2rem 0rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.team img, .omoss img {max-width: 40%;}
+.varteam, .omoss p {padding: 0 2rem;}
+
+.review-block {
+    margin: 0 2rem;
+    width: 33%;}
+
+.block {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;}  
+
+.review-block h2 {
+    font-family: Garamond;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.review-block h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+/*  Form styling */
+.form {
+    display: flex;
+    column-gap: 3rem;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+form .required {
+    color: #FF5757;
+    margin: 0;
+    font-size: smaller;}
+
+form label {
+    font-family: Garamond;
+    font-size: 1.5rem;
+    color: #48372E;
+    padding-bottom: 0.5rem;
+}
+
+.form input, select {
+    padding: 0.8rem 0.5rem;
+    font-size: larger;
+}
+
+select, #datum, #submit {cursor: pointer;}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 4rem 0;
+}
+
+#submit {
+    font-family: Garamond;
+    font-size: 1.5rem;
+    padding: 0.8rem 5rem;
+    opacity: 0.85;
+    color: white;
+    border-radius: 1rem;
+    border-width: 0;
+}
+
+#submit:hover {opacity: 1;}
+
+.form-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer styling */
+footer {
+    width: 100%;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: white;
+    display: flex;
+    column-gap: 4rem;
+    width: 60%;
+    justify-content: space-evenly;
+}
+
+.footer h4 {
+    font-family: Garamond;
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+
+footer p, .info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin: 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.info {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*Rättigheter styling*/
+.rattigheter {
+    color: white;
+    text-align: center;
+}
+
+.rattigheter p {
+    padding: 2rem 0;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    display: none;
+    border: 0.1rem solid #F4F1ED;
+    color: white;
+    cursor: pointer;
+    padding: 0.8rem 0.9rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+/*  Media */
+@media (max-width: 840px) {
+    .navbar, .links {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .kok-container, .kok {
+        flex-direction: column;
+        max-height: fit-content;
+        max-height: 55rem;
+    }
+
+    .links {
+        display: flex;
+        margin: 0rem 1.5rem;
+    }
+
+    .links a {margin: 0.3rem 0rem;}
+    .mainimg, .banner {background-size: auto;}
+    .banner h1, .banner h4 {width: 80%;}
+    .menyblock {flex-direction: column;}
+    .menyblock img {max-height: 40rem;}
+    .rattigheter p {width: 80%;}
+    .reviews .review-block {margin: 0;}
+
+    .footer {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .kok-container, .kok, .vision-container {
+        flex-direction: column;
+        max-height: 65rem;
+    }
+
+    .footer {width: 80%;}
+    .mainimg.meny {background-size: auto;}
+
+    .omoss img, .team img {
+        margin: 0;
+        max-width: 100%;}
+
+    .block, .omossblock, .teamblock {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;}
+
+    .omossblock p, .team p, .varteam {
+        width: 100%;
+        padding: 0;}
+
+    .form, .reviews .review-block {
+        flex-direction: column;
+        width: 90%;
+        }
+}
+
+@media (max-width: 1100px) {
+    .bord, .kontakt {background-size: auto;}
+    .menylista {max-width: 100%;}
+}

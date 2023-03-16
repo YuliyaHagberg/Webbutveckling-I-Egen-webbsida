@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!-- Dokumentets typ: html -->
+<html lang="sv">    <!-- Webbsidans språk: svenska -->
+<head>
+    <meta charset="UTF-8">  <!-- teckenkodning -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Kontrollerar webbsidans responsivitet till en viss grad -->
+    <meta name="description" content="">    <!-- Beskrivning av webbsidan -->
+    <link rel="stylesheet" href="index.css">    <!-- Länkar till css-filen med stilmall -->
+    <title>Voyage Mondial</title>   <!-- Titel på webbsidan -->
+    <script src="https://kit.fontawesome.com/23f2ff7576.js" crossorigin="anonymous"></script>   <!-- Importerar FontAwesome -->
+</head>
+
+<body>
+  <div class="navbar">  <!-- Navigation bar -->
+    <a class="logo" href="index.html">Voyage Mondial</a>  <!-- Logo -->
+    <div class="navlinks">
+      <div class="links"> <!-- Left side of navbar when small screen -->
+        <a href="index.html">HEM</a>
+        <a href="meny.html">MENY</a>
+        <a href="omOss.html">OM OSS</a>
+      </div>
+      <div class="links"> <!-- Right side of navbar when small screen -->
+        <a href="bokaBord.html">BOKA BORD</a>
+        <a href="kontakt.html">KONTAKT</a>
+        <a href="english.html">ENGLISH</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainimg"> <!-- Head banner -->
+    <h4>WELCOME TO</h4>
+    <h1>Voyage Mondial</h1>
+  </div>
+
+  <div class="philosophy">  <!-- Philosophy/Vision part -->
+    <h1>Our philosophy</h1>
+    <p>Welcome to Voyage Mondial - the restaurant where you can discover a world of flavors. Inspired by a trip around the
+       world, our international theme and diverse menu are meant to take you on a taste journey you won't soon forget. 
+       With us, you can experience a dining experience like no other - from spicy Indian dishes and delicious Thai flavors
+        to American classics and world-class Italian cooking.<br><br>
+      Our chefs use only fresh and high quality ingredients to create outstanding dishes to suit all tastes and 
+      preferences. Our menu also includes vegetarian and vegan options so everyone can enjoy our great food. Whether you
+       want a romantic dinner for two or a party for the whole family, our inviting atmosphere and professional staff are
+        always ready to provide you with the best service and create a memorable experience.<br><br>
+      So why not take a break from everyday life and take your taste buds on a trip around the world? Visit us at Voyage 
+      Mondial and discover new flavors and cultures in a dining experience you will remember forever.</p>
+</div>
+
+  <div class="varakok eng"> <!-- Our kitchens containers -->
+    <h1>Our kitchens</h1>
+    <div class="kok-container">
+      <div class="kok block1eng">
+        <div class="text">
+          <h4>Scandinavian</h4>
+          <p>Scandinavian food is known for its simplicity and natural flavors, with a focus on local ingredients from the sea, forest and soil.</p>
+        </div>
+      </div>
+      <div class="kok block2eng">
+        <div class="text">
+          <h4>Asian</h4>
+          <p>Asian cuisine is known for its diversity of flavors from different regions such as China, Japan, Korea, Thailand and Vietnam.</p>
+        </div>
+      </div>
+      <div class="kok block3eng">
+        <div class="text">
+          <h4>International</h4>
+          <p>A mix of different cultures and flavors from all over the world. That includes everything from Italian pasta to Mexican tacos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews"> <!-- Reviews part -->
+    <h1>Reviews</h1>
+    <div class="block">
+        <div class="review-block">
+            <h2 class="quote">‘‘</h2>
+            <p>I had the best steak of my life at this restaurant. Highly recommend it to meat lovers.</p>
+            <h4>Hanna Johansson</h4>
+        </div>
+        <div class="review-block">
+            <h2 class="quote">‘‘</h2>
+            <p>The service here is excellent and the atmosphere is fantastic. I will definitely be coming back.</p>
+            <h4>Maria le Grand</h4>
+        </div>
+        <div class="review-block">
+            <h2 class="quote">‘‘</h2>
+            <p>The food was fresh and the flavors were well-balanced. Would highly recommend to anyone looking for great Asian food.</p>
+            <h4>Expressen</h4>
+        </div>
+    </div>
+  </div>
+
+    <!-- Scroll Up Button -->
+  <button	id="myBtn" title="To top" class="fas fa-angle-up"></button>
+
+  <footer>
+    <div class="footer">
+      <div class="oppet"> <!-- Opening hours part -->
+        <h4>Opening hours</h4>
+        <div class="row">
+          <p class="vecka"><strong>Monday - Friday</strong></p>
+          <p class="tid">10:00 - 20:00</p>
+        </div>
+        <div class="row">
+          <p class="vecka"><strong>Saturday - Sunday</strong></p>
+          <p class="tid">12:00 - 18:00</p>
+        </div>
+      </div>
+
+      <div class="info">  <!-- Contact information part -->
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>123 Anywhere St., <br>Any City ST 12345</p>
+        </div>
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-phone"></i>
+          <p>1123-456-7890</p>
+        </div>
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <p>voyage@mondial.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rattigheter"> <!-- Rights part -->
+      <p>© Restaurant Voyage Mondial. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll up button script -->
+  <script>
+    document.addEventListener('scroll', function () {
+      var scrollButton = document.getElementById('myBtn');
+      if (window.pageYOffset >= 60) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('myBtn').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>

@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Dokumentets typ: html -->
+<html lang="sv">    <!-- Webbsidans språk: svenska -->
+<head>
+    <meta charset="UTF-8">  <!-- teckenkodning -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Kontrollerar webbsidans responsivitet till en viss grad -->
+    <meta name="description" content="">    <!-- Beskrivning av webbsidan -->
+    <link rel="stylesheet" href="index.css">    <!-- Länkar till css-filen med stilmall -->
+    <title>Voyage Mondial</title>   <!-- Titel på webbsidan -->
+    <script src="https://kit.fontawesome.com/23f2ff7576.js" crossorigin="anonymous"></script>   <!-- Importerar FontAwesome -->
+</head>
+
+<body>
+  <div class="navbar">  <!-- Navigation bar -->
+    <a class="logo" href="index.html">Voyage Mondial</a>  <!-- Logo -->
+    <div class="navlinks">
+      <div class="links"> <!-- Left side of navbar when small screen -->
+        <a href="index.html">HEM</a>
+        <a href="meny.html">MENY</a>
+        <a href="omOss.html">OM OSS</a>
+      </div>
+      <div class="links"> <!-- Right side of navbar when small screen -->
+        <a href="bokaBord.html">BOKA BORD</a>
+        <a href="kontakt.html">KONTAKT</a>
+        <a href="english.html">ENGLISH</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainimg bord">  <!-- Head banner -->
+    <h1>Boka bord</h1>
+    <p>Här kan du skicka förfrågan om bordsbokning genom att fylla i formuläret nedan. Vi återkommer alltid inom 24 timmar!</p>
+  </div>
+
+  <form>
+    <div class="form">  <!-- Form for reservation-request -->
+        <div class="form-block">
+            <label for="fornamn">Förnamn<span class="required"> *</span></label>
+            <input type="text" id="fornamn" name="fornamn" required><br><br>
+        
+            <label for="efternamn">Efternamn<span class="required"> *</span></label>
+            <input type="text" id="efternamn" name="efternamn" required><br><br>
+        
+            <label for="email">E-mail<span class="required"> *</span></label>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="telefonnummer">Telefonnummer<span class="required"> *</span></label>
+            <input type="tel" id="telefonnummer" name="telefonnummer" required><br><br>
+        </div>
+
+        <div class="form-block">
+            <label for="datum">Datum<span class="required"> *</span></label>
+            <input type="date" id="datum" name="datum" required><br><br>
+        
+            <label for="antal-gaster">Antal gäster<span class="required"> *</span></label>
+            <select id="antal-gaster" name="antal-gaster" required>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            </select><br><br>
+        
+            <label for="onskemal">Önskemål</label>
+            <textarea id="onskemal" name="onskemal" rows="11"></textarea><br><br>
+        </div>
+    </div>
+    <div class="submit">  <!-- Submit button -->
+        <input type="submit" value="Skicka" id="submit">
+    </div>
+  </form>
+
+    <!-- Scroll Up Button -->
+  <button	id="myBtn" title="To top" class="fas fa-angle-up"></button>
+
+  <footer>
+    <div class="footer">
+      <div class="oppet"> <!-- Opening hours part -->
+        <h4>Öppettider</h4>
+        <div class="row">
+          <p class="vecka"><strong>Måndag - Fredag</strong></p>
+          <p class="tid">10:00 - 20:00</p>
+        </div>
+        <div class="row">
+          <p class="vecka"><strong>Lördag - Söndag</strong></p>
+          <p class="tid">12:00 - 18:00</p>
+        </div>
+      </div>
+
+      <div class="info">  <!-- Contact information part -->
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <p>123 Anywhere St., <br>Any City ST 12345</p>
+        </div>
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-phone"></i>
+          <p>1123-456-7890</p>
+        </div>
+        <div class="row">
+          <i class="fa-sharp fa-solid fa-envelope"></i>
+          <p>voyage@mondial.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rattigheter"> <!-- Rights part -->
+      <p>© Restaurang Voyage Mondial. Alla rättigheter reserverade.</p>
+    </div>
+  </footer>
+  
+  <!-- Scroll up button script -->
+  <script>
+    document.addEventListener('scroll', function () {
+      var scrollButton = document.getElementById('myBtn');
+      if (window.pageYOffset >= 60) {
+        scrollButton.style.display = 'block';
+      } else {
+        scrollButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('myBtn').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
